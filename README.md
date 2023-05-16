@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="CHATGPT TURBO" src="https://img.shields.io/badge/TELEGRAM BOT-cyan?colorA=%5df9ff00&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="AIO DOWNLOADER" src="https://img.shields.io/badge/TELEGRAM BOT-cyan?colorA=%5df9ff00&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/Galang-Purnama/AIO-Downloader"><img title="Author" src="https://img.shields.io/badge/Galang-Purnama-red.svg?style=for-the-badge&logo=github"></a>
