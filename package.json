@@ -1,0 +1,40 @@
+{
+  "name": "AIO",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "aio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node aio.js"
+  },
+  "keywords": [
+    "bot-tele"
+  ],
+  "author": "DEFF",
+  "license": "ISC",
+  "dependencies": {
+    "@bochilteam/scraper": "^3.0.0",
+    "@xct007/frieren-scraper": "^0.0.2",
+    "@xct007/tiktok-scraper": "latest",
+    "api-dylux": "latest",
+    "axios": "latest",
+    "cfonts": "^2.9.3",
+    "chalk": "^4.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "gradient-string": "^2.0.2",
+    "jsdom": "^16.7.0",
+    "node-fetch": "^2.6.1",
+    "node-telegram-bot-api": "0.61.0",
+    "qs": "^6.11.2",
+    "spinnies": "^0.5.1",
+    "ytdl-core": "^4.11.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Galang-Purnama/AIO-Downloader"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
