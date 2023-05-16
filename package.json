@@ -10,7 +10,7 @@
   "keywords": [
     "bot-tele"
   ],
-  "author": "DEFF",
+  "author": "Galang-Purnama",
   "license": "ISC",
   "dependencies": {
     "@bochilteam/scraper": "^3.0.0",
