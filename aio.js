@@ -30,7 +30,7 @@ var _0xde3d=["\x6E\x6F\x64\x65\x2D\x74\x65\x6C\x65\x67\x72\x61\x6D\x2D\x62\x6F\x
 var _0xaa00=["\x32","\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x2E\x2E\x2E","\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x5B\x20\x42\x4F\x54\x20\x53\x54\x41\x52\x54\x45\x44\x20\x5D","\x62\x6C\x75\x65\x42\x72\x69\x67\x68\x74","\x6C\x6F\x67"];Sukses(_0xaa00[0],_0xaa00[1]);setTimeout(()=>{success(_0xaa00[0],_0xaa00[2]);console[_0xaa00[5]](chalk[_0xaa00[4]](_0xaa00[3]))},3000)
 
 //          Setting API Token    \/        //
-const conn = new TelegramBot('6249648926:AAFybvKls-NJr3oK1f19NhdZuOaFMDi-iyM', { polling: true });
+const conn = new TelegramBot('Token Bot Tele', { polling: true });
 
 conn.on('message', async msg => {
     const chatId = msg.chat.id;
