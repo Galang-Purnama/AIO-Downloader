@@ -2,13 +2,15 @@ const { Tiktok } = require('@xct007/tiktok-scraper');
 const { success, Sukses} = require('./lib/simple')
 const { bgcolor } = require("./lib/color");
 let chalk = require("chalk")
+const gradient = require("gradient-string");
 const ytdl = require('ytdl-core');
 const fs = require('fs');
 const { facebook } = require("@xct007/frieren-scraper")
 let { instagram } = require('@xct007/frieren-scraper')
 let axios = require('axios')
-const gradient = require("gradient-string");
 const {youtubeSearch} = require("@bochilteam/scraper")
+
+console.clear();
 let duck = gradient.pastel.multiline(
   [
     "───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───",
@@ -23,11 +25,12 @@ let duck = gradient.pastel.multiline(
     "█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█",
   ].join("\n")
 );
-console.log(duck)
-var _0x4903=["\x6E\x6F\x64\x65\x2D\x74\x65\x6C\x65\x67\x72\x61\x6D\x2D\x62\x6F\x74\x2D\x61\x70\x69","\x0A\x53\x63\x72\x69\x70\x74\x20\x62\x79\x20\x3A\x20\x47\x61\x6C\x61\x6E\x67\x20\x50\x75\x72\x6E\x61\x6D\x61\x0A\x49\x6E\x73\x74\x61\x67\x72\x61\x6D\x20\x3A\x20\x67\x61\x6C\x61\x6E\x67\x70\x75\x72\x6E\x61\x6D\x61\x2E\x6D\x79\x2E\x69\x64\x0A\x47\x69\x74\x68\x75\x62\x3A\x20\x47\x61\x6C\x61\x6E\x67\x2D\x50\x75\x72\x6E\x61\x6D\x61\x0A\x54\x65\x6C\x65\x67\x72\x61\x6D\x3A\x20\x40\x47\x61\x6C\x61\x6E\x67\x50\x5F\x44\x65\x76","\x67\x72\x61\x79","\x6C\x6F\x67","\x32","\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x2E\x2E\x2E","\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x5B\x20\x42\x4F\x54\x20\x53\x54\x41\x52\x54\x45\x44\x20\x5D","\x62\x6C\x75\x65\x42\x72\x69\x67\x68\x74"];const TelegramBot=require(_0x4903[0]);console[_0x4903[3]](bgcolor(_0x4903[1],_0x4903[2]));Sukses(_0x4903[4],_0x4903[5]);setTimeout(()=>{success(_0x4903[4],_0x4903[6]);console[_0x4903[3]](chalk[_0x4903[8]](_0x4903[7]))},3000) 
+console.log(duck);
+var _0xde3d=["\x6E\x6F\x64\x65\x2D\x74\x65\x6C\x65\x67\x72\x61\x6D\x2D\x62\x6F\x74\x2D\x61\x70\x69","\x0A\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x0A\x53\x63\x72\x69\x70\x74\x20\x62\x79\x20\x3A\x20\x47\x61\x6C\x61\x6E\x67\x20\x50\x75\x72\x6E\x61\x6D\x61\x0A\x49\x6E\x73\x74\x61\x67\x72\x61\x6D\x20\x3A\x20\x67\x61\x6C\x61\x6E\x67\x70\x75\x72\x6E\x61\x6D\x61\x2E\x6D\x79\x2E\x69\x64\x0A\x47\x69\x74\x68\x75\x62\x3A\x20\x47\x61\x6C\x61\x6E\x67\x2D\x50\x75\x72\x6E\x61\x6D\x61\x0A\x54\x65\x6C\x65\x67\x72\x61\x6D\x3A\x20\x40\x47\x61\x6C\x61\x6E\x67\x50\x5F\x44\x65\x76\x0A\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x3D\x0A","\x6C\x6F\x67"];const TelegramBot=require(_0xde3d[0]);console[_0xde3d[2]](_0xde3d[1])
+var _0xaa00=["\x32","\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x2E\x2E\x2E","\x43\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x5B\x20\x42\x4F\x54\x20\x53\x54\x41\x52\x54\x45\x44\x20\x5D","\x62\x6C\x75\x65\x42\x72\x69\x67\x68\x74","\x6C\x6F\x67"];Sukses(_0xaa00[0],_0xaa00[1]);setTimeout(()=>{success(_0xaa00[0],_0xaa00[2]);console[_0xaa00[5]](chalk[_0xaa00[4]](_0xaa00[3]))},3000)
 
 //          Setting API Token    \/        //
-const conn = new TelegramBot('Token Bot', { polling: true });
+const conn = new TelegramBot('6249648926:AAFybvKls-NJr3oK1f19NhdZuOaFMDi-iyM', { polling: true });
 
 conn.on('message', async msg => {
     const chatId = msg.chat.id;
@@ -97,51 +100,85 @@ Mendownload Tiktok Dari Link: ${msg.text}`))
                 ]
               }
             })
-            conn.on('callback_query', async (query) => {
-                const queryData = query.data;
-                try {
-                    if (queryData === 'audioyt') {
-                      const info = await ytdl.getInfo(url);
-                      const audioFormats = ytdl.filterFormats(info.formats, 'audioonly');
-                      const audio = audioFormats[0];
-                      const audioTitle = info.videoDetails.title;
-                
-                      conn.sendMessage(chatId, 'Sedang mengunduh audio...').then((sentMessage) => {
-                        setTimeout(() => {
-                          conn.deleteMessage(chatId, sentMessage.message_id);
-                        }, 60000);
-                      })
-                
-                      ytdl(url, { format: audio })
-                        .pipe(fs.createWriteStream('./tmp/audioyt.mp3'))
-                        .on('finish', () => {
-                          conn.sendAudio(chatId, './tmp/audioyt.mp3', {title: audioTitle, caption: '✅ DONE'})
-                        });
-                    } else if (queryData === 'videoyt') {
-                      const info = await ytdl.getInfo(url);
-                      const videoFormats = ytdl.filterFormats(info.formats, 'videoandaudio');
-                      const video = videoFormats[0];
-                      const videoTitle = info.videoDetails.title;
-                
-                      conn.sendMessage(chatId, 'Sedang mengunduh video...').then((sentMessage) => {
-                        setTimeout(() => {
-                          conn.deleteMessage(chatId, sentMessage.message_id);
-                        }, 60000);
-                      })
-                
-                      ytdl(url, { format: video })
-                        .pipe(fs.createWriteStream('./tmp/videoyt.mp4'))
-                        .on('finish', () => {
-                          conn.sendVideo(chatId, './tmp/videoyt.mp4', {title: videoTitle, caption: '✅ DONE'})
-                        });
-                    }
-                  } catch (error) {
-                    conn.sendMessage(chatId, 'Terjadi kesalahan saat mengunduh.');
-                  }
-              });
-            console.log(chalk.bold.white(`
-Mendownload Youtube Dari Link: ${msg.text}`))
-          }
+            let isDownloading = false;
+let lastMessageId = null;
+
+conn.on('callback_query', async (query) => {
+  const queryData = query.data;
+  const chatId = query.message.chat.id;
+  const userId = query.from.id;
+
+  if (userId !== chatId) {
+    return;
+  }
+
+  try {
+    if (queryData === 'audioyt') {
+      if (isDownloading) {
+        conn.answerCallbackQuery(query.id, 'Sedang dalam proses pengunduhan audio...');
+        return;
+      }
+
+      isDownloading = true;
+
+      const info = await ytdl.getInfo(url);
+      const audioFormats = ytdl.filterFormats(info.formats, 'audioonly');
+      const audio = audioFormats[0];
+      const audioTitle = info.videoDetails.title;
+
+      const message = await conn.sendMessage(chatId, 'Sedang mengunduh audio...');
+      lastMessageId = message.message_id;
+
+      ytdl(url, { format: audio })
+        .pipe(fs.createWriteStream('./tmp/audioyt.mp3'))
+        .on('finish', () => {
+          conn.sendAudio(chatId, './tmp/audioyt.mp3', { title: audioTitle, caption: '✅ DONE' })
+            .then(() => {
+              // Hapus pesan sebelumnya
+              if (lastMessageId) {
+                conn.deleteMessage(chatId, lastMessageId);
+              }
+              isDownloading = false;
+            });
+        });
+    } else if (queryData === 'videoyt') {
+      if (isDownloading) {
+        conn.answerCallbackQuery(query.id, 'Sedang dalam proses pengunduhan video...');
+        return;
+      }
+
+      isDownloading = true;
+
+      const info = await ytdl.getInfo(url);
+      const videoFormats = ytdl.filterFormats(info.formats, 'videoandaudio');
+      const video = videoFormats[0];
+      const videoTitle = info.videoDetails.title;
+
+      const message = await conn.sendMessage(chatId, 'Sedang mengunduh video...');
+      lastMessageId = message.message_id;
+
+      ytdl(url, { format: video })
+        .pipe(fs.createWriteStream('./tmp/videoyt.mp4'))
+        .on('finish', () => {
+          conn.sendVideo(chatId, './tmp/videoyt.mp4', { title: videoTitle, caption: '✅ DONE' })
+            .then(() => {
+              // Hapus pesan sebelumnya
+              if (lastMessageId) {
+                conn.deleteMessage(chatId, lastMessageId);
+              }
+              isDownloading = false;
+            });
+        });
+    }
+  } catch (error) {
+    conn.sendMessage(chatId, 'Terjadi kesalahan saat mengunduh.');
+  }
+
+  // Jawab callback query agar tidak timeout
+  conn.answerCallbackQuery(query.id);
+});
+    }            
+            
     
     if (msg.text.match(/https?:\/\/(?:www\.)?instagram\.com\/[^ ]+/)) {
             const datTa = await instagram.v1(msg.text)
